@@ -1,0 +1,260 @@
+<!DOCTYPE html><html lang="en"><head>
+<link rel="icon" data-savepage-href="https://shadowtools.site/favicon.ico" href="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TikTok Free Views - CyberGuru</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0f0f0f;
+      font-family: 'Poppins', sans-serif;
+      color: #00ffc6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 450px;
+      margin: 20px;
+    }
+
+    .card {
+      background: rgba(17, 17, 17, 0.95);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 198, 0.3);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      will-change: transform, box-shadow;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px rgba(0, 255, 198, 0.5);
+    }
+
+    .card h2 {
+      font-size: 2em;
+      color: #00ffc6;
+      text-shadow: 0 0 5px #00ffc6;
+      margin-bottom: 10px;
+      animation: neonGlow 1s ease-in-out infinite alternate;
+    }
+
+    .card p {
+      font-size: 1em;
+      color: #b0b0b0;
+      margin-bottom: 15px;
+    }
+
+    .card input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #00ffc6;
+      background: #222;
+      color: #fff;
+      font-size: 1em;
+      outline: none;
+      transition: border-color 0.2s ease;
+      margin-bottom: 15px;
+    }
+
+    .card input[type="text"]:focus {
+      border-color: #ff00ff;
+      box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    }
+
+    .card input[type="submit"] {
+      background: linear-gradient(45deg, #00ffc6, #ff00ff, #00ff88);
+      color: #000;
+      font-weight: bold;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 3px 15px rgba(0, 255, 198, 0.4);
+      background-size: 200% 200%;
+      animation: gradientShift 3s ease infinite;
+      text-transform: uppercase;
+    }
+
+    .card input[type="submit"]:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 20px rgba(0, 255, 198, 0.6);
+    }
+
+    .status {
+      margin-top: 20px;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    .success {
+      color: #00ff88;
+      animation: popIn 0.4s ease;
+    }
+
+    .error {
+      color: #ff4c4c;
+      animation: shake 0.2s ease;
+    }
+
+    .social-links {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .social-links a {
+      display: inline-block;
+      background: linear-gradient(45deg, #00ffc6, #ff00ff);
+      color: #000;
+      font-weight: bold;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 0.9em;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 3px 10px rgba(0, 255, 198, 0.4);
+      background-size: 200% 200%;
+      animation: gradientShift 3s ease infinite;
+    }
+
+    .social-links a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 255, 198, 0.6);
+    }
+
+    .footer {
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+      color: #00ffc6;
+      font-size: 0.9em;
+      text-shadow: 0 0 5px #00ffc6;
+      background: rgba(0, 0, 0, 0.8);
+      animation: slideUp 0.8s ease;
+    }
+
+    .footer span {
+      font-weight: bold;
+      background: linear-gradient(45deg, #00ffc6, #ff00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Animations */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes neonGlow {
+      from { text-shadow: 0 0 5px #00ffc6; }
+      to { text-shadow: 0 0 10px #00ffc6; }
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.9); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-3px); }
+      75% { transform: translateX(3px); }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 500px) {
+      .card {
+        padding: 20px;
+      }
+      .card h2 {
+        font-size: 1.6em;
+      }
+      .card input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 0.9em;
+      }
+      .social-links a {
+        padding: 8px 15px;
+        font-size: 0.8em;
+      }
+    }
+  </style>
+
+<style id="savepage-cssvariables">
+  :root {
+  }
+</style>
+<script id="savepage-shadowloader" type="text/javascript">
+  "use strict";
+  window.addEventListener("DOMContentLoaded",
+  function(event) {
+    savepage_ShadowLoader(5);
+  },false);
+  function savepage_ShadowLoader(c){createShadowDOMs(0,document.documentElement);function createShadowDOMs(a,b){var i;if(b.localName=="iframe"||b.localName=="frame"){if(a<c){try{if(b.contentDocument.documentElement!=null){createShadowDOMs(a+1,b.contentDocument.documentElement)}}catch(e){}}}else{if(b.children.length>=1&&b.children[0].localName=="template"&&b.children[0].hasAttribute("data-savepage-shadowroot")){b.attachShadow({mode:"open"}).appendChild(b.children[0].content);b.removeChild(b.children[0]);for(i=0;i<b.shadowRoot.children.length;i++)if(b.shadowRoot.children[i]!=null)createShadowDOMs(a,b.shadowRoot.children[i])}for(i=0;i<b.children.length;i++)if(b.children[i]!=null)createShadowDOMs(a,b.children[i])}}}
+</script>
+<meta name="savepage-url" content="https://shadowtools.site/tiktokviews.php">
+<meta name="savepage-title" content="TikTok Free Views - CyberGuru ">
+<meta name="savepage-pubdate" content="Unknown">
+<meta name="savepage-from" content="https://shadowtools.site/tiktokviews.php">
+<meta name="savepage-date" content="Sun May 04 2025 20:45:59 GMT+0500 (Pakistan Standard Time)">
+<meta name="savepage-state" content="Standard Items; Retain cross-origin frames; Merge CSS images; Remove unsaved URLs; Load lazy images in existing content; Max frame depth = 5; Max resource size = 50MB; Max resource time = 10s;">
+<meta name="savepage-version" content="33.9">
+<meta name="savepage-comments" content="">
+  </head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>🎯 TikTok Free Views</h2>
+      <p>Boost your TikTok video with free views!</p>
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">By Qazi</h2>
+        </header>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">TikTok Free Views</h4>
+          <p class="blog-text">Do Not Place Multiple Orders At One Time</p>
+          <form action="" method="get">
+                    <input type="text" name="link" class="form-input" placeholder="PASTE YOUR TIKTOK VIDEO LINK" required="" value="">
+                    <br><br>
+                    <input type="submit" class="form-btn" name="submit" value="Get Free Views">        </form></div>
+      </article>
+    </div>
+  </div>
+  <div class="social-links">
+    <a href="https://wa.me/+923319198321" target="_blank">Join our WhatsApp Channel</a>
+    <a href="https://t.me/" target="_blank">Join our Telegram Channel</a>
+  </div>
+  <footer class="footer">
+    <p>© 2025 <span>Qazi</span>. All Rights Reserved.</p>
+  </footer>
+
+</body></html>
