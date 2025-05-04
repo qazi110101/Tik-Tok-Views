@@ -256,5 +256,37 @@
   <footer class="footer">
     <p>© 2025 <span>Qazi</span>. All Rights Reserved.</p>
   </footer>
+ <script>
+    const form = document.getElementById('viewForm');
+    const sendBtn = document.getElementById('sendBtn');
+    const progressContainer = document.getElementById('progressContainer');
+    const progressBar = document.getElementById('progressBar');
+    const statusMessage = document.getElementById('statusMessage');
 
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const link = document.getElementById('tiktokLink').value.trim();
+      if (!link) return;
+
+      sendBtn.disabled = true;
+      sendBtn.innerText = 'Sending...';
+      progressContainer.style.display = 'block';
+      progressBar.style.width = '0%';
+      statusMessage.style.display = 'none';
+
+      let progress = 0;
+      const interval = setInterval(() => {
+        progress += Math.random() * 10;
+        if (progress >= 100) {
+          progress = 100;
+          clearInterval(interval);
+          statusMessage.style.display = 'block';
+          sendBtn.innerText = 'Send Views Again';
+          sendBtn.disabled = false;
+        }
+        progressBar.style.width = progress + '%';
+      }, 300);
+    });
+  </script
 </body></html>
